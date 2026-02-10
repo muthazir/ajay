@@ -1,24 +1,20 @@
-# SQL Data Cleaning – Global Layoffs Dataset
+## 🔹 SQL Data Cleaning – Global Layoffs Dataset
 
-This project demonstrates a practical SQL-based data cleaning workflow using a public Kaggle dataset on global company layoffs.
+This project illustrates practical SQL-based data cleaning using a publicly available **Global Layoffs** dataset from Kaggle. The focus is on transforming raw data into a standardized, consistent, and high-quality dataset suitable for analysis or reporting.
 
-## Dataset
-- Source: Kaggle – Global Layoffs (2022)
-- Schema preserved to maintain reproducibility
-
-## What I Did
-- Preserved raw data and cleaned using staging tables
-- Identified and removed duplicate layoff records using `ROW_NUMBER()`
+### 🔍 What I Did
+- Preserved the raw dataset and cleaned using staging tables
+- Removed duplicate records using `ROW_NUMBER()`
 - Standardized company, industry, country, and date fields
-- Handled NULL values logically
-- Removed records with no usable layoff information
+- Handled NULL and missing values logically
+- Filtered out rows lacking usable layoff information
 
-## Tools & Concepts
+### 🛠️ Tools & Concepts Used
 - SQL (MySQL-compatible)
-- Window functions
+- Window functions (`ROW_NUMBER`)
 - Data standardization
 - Date transformation
 - Data quality validation
 
-## Outcome
-The final dataset is clean, consistent, and ready for exploratory data analysis or reporting.
+### 🎯 Outcome
+A clean and consistent dataset that is ready for exploratory data analysis or further reporting tasks.
